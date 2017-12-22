@@ -47,12 +47,12 @@ if __name__ == '__main__':
     else:
         if(clf_type=='CAE'):
             
-            #executions = 0
-            #for i in range(executions):
-            #    compiled_ypreds = detection_and_classification.CAE_anomaly_detection(X_train, Y_train, X_test, y_test, dataset_name, SVHN_num_classes, i)
+            executions = [0, 1, 2, 3, 4, 5, 6, 7, 8]
+            for i in range(executions):
+                compiled_ypreds = detection_and_classification.CAE_anomaly_detection(X_train, Y_train, X_test, y_test, dataset_name, SVHN_num_classes, i)
             
-            i = 9
-            compiled_ypreds = detection_and_classification.CAE_anomaly_detection(X_train, Y_train, X_test, y_test, dataset_name, SVHN_num_classes, i)
+            #i = 9
+            #compiled_ypreds = detection_and_classification.CAE_anomaly_detection(X_train, Y_train, X_test, y_test, dataset_name, SVHN_num_classes, i)
                 
                 
         elif(clf_type=='CNN'):
